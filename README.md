@@ -2,15 +2,29 @@
 
 A new Flutter project.
 
-## Getting Started
+## Getting Started with clean architecture
 
-This project is a starting point for a Flutter application.
+lib
+-core
+-entities      #Core business logic models
+-repositories  #Interfaces for data access
+-usecases      #Application-specific business rules
+-errors        #Custom error handling
+-data
+-datasources
+-remote         #Remote data sources (API)
+-local          #Remote data sources (Internal Database)
+-repositoriesImpl  #Implementations of repositories
+-models             #Data models
+-presentation
+-screens            #UI screens
+-widgets            #Reusable UI components/widgets
+-providers          #Provider setup and providers
+-utils              #Utility classes for presentation layer
+-injections
+-locator.dart       #Setup for dependency injection
+-main.dart
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
